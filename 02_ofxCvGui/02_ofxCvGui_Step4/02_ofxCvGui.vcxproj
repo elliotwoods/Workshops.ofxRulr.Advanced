@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>02_ofxCvGui</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssets\src;..\..\..\addons\ofxCvGui\src;..\..\..\addons\ofxCvGui\src\ofxCvGui;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxTextInputField\src;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssets\src;..\..\..\addons\ofxCvGui\src;..\..\..\addons\ofxCvGui\src\ofxCvGui;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxTextInputField\src;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssets\src;..\..\..\addons\ofxCvGui\src;..\..\..\addons\ofxCvGui\src\ofxCvGui;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxTextInputField\src;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxAssets\src;..\..\..\addons\ofxCvGui\src;..\..\..\addons\ofxCvGui\src\ofxCvGui;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels;..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups;..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils;..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets;..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxLiquidEvent\src;..\..\..\addons\ofxTextInputField\src;..\..\..\addons\ofxSingleton\src;..\..\..\addons\ofxSingleton\src\ofxSingleton</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="src\main.cpp" />
+		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Base.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\EditableValue.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.h" />
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.h" />
+		<ClInclude Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.h" />
+		<ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h" />
+		<ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.h" />
+		<ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputFieldFontRenderer.h" />
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h" />
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h" />
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h" />
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h" />
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+			<Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc">
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties RESOURCE_FILE="icon.rc" />
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>

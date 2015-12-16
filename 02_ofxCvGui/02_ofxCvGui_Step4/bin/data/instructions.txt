@@ -1,0 +1,4 @@
+ofxCvGui simple panel example
+
+* Press 'm' whilst hovering over a panel to maximise it
+* Press 'f' to toggle fullscreen
