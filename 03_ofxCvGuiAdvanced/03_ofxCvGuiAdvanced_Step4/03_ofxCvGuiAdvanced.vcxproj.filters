@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxAssets\src\ofxAssets.cpp">
+			<Filter>addons\ofxAssets\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels\Groups</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.cpp">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.cpp">
+			<Filter>addons\ofxCvGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.cpp">
+			<Filter>addons\ofxGrabCam\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.cpp">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.cpp">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.cpp">
+			<Filter>addons\ofxTextInputField\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxAssets">
+			<UniqueIdentifier>{3468134A-B198-A46E-EBDE-53BA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxAssets\src">
+			<UniqueIdentifier>{48C8A81E-F2E9-BE60-EA2E-067D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui">
+			<UniqueIdentifier>{119B9500-8BFE-C3BC-3A42-BF30}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src">
+			<UniqueIdentifier>{D6482482-0CBA-8309-2756-3DA1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src\ofxCvGui">
+			<UniqueIdentifier>{130D17C9-5AB3-5C1B-21DA-784B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src\ofxCvGui\Panels">
+			<UniqueIdentifier>{467294EC-7578-198A-9A92-2BC9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src\ofxCvGui\Panels\Groups">
+			<UniqueIdentifier>{72078BFC-57CB-D680-B0F9-2505}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src\ofxCvGui\Utils">
+			<UniqueIdentifier>{22D6EE3C-9820-7B85-FC6A-8DEE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxCvGui\src\ofxCvGui\Widgets">
+			<UniqueIdentifier>{1C6E4B88-AC3C-4BC6-B82E-853B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGrabCam">
+			<UniqueIdentifier>{FDEBFF3D-A5AB-AA4F-3D3C-7284}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGrabCam\src">
+			<UniqueIdentifier>{46EE530C-80B2-2CD9-FA39-D568}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxLiquidEvent">
+			<UniqueIdentifier>{529D7BB5-392B-0172-E901-104A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxLiquidEvent\src">
+			<UniqueIdentifier>{68B1F917-D2DC-C23A-76D3-6342}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSingleton">
+			<UniqueIdentifier>{3DFBBEA6-8D0A-F20E-0949-CA62}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSingleton\src">
+			<UniqueIdentifier>{9AE25DD0-A34B-B543-F9E7-0489}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSingleton\src\ofxSingleton">
+			<UniqueIdentifier>{C50808D9-E231-A03E-7F39-80ED}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxTextInputField">
+			<UniqueIdentifier>{A4B02712-30E4-B504-C110-2C93}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxTextInputField\src">
+			<UniqueIdentifier>{B67AFC83-AF32-6FE3-281F-AC21}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxAssets\src\ofxAssets.h">
+			<Filter>addons\ofxAssets\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Builder.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Controller.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Element.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementGroup.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\ElementSlot.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\InspectController.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Base.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\BaseImage.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Draws.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementCanvas.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\ElementHost.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Base.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels\Groups</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Groups\Grid.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels\Groups</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Image.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Inspector.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Instructions.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Pixels.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\PixelsVector.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Scroll.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\SharedView.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\Text.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Panels\World.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Panels</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Types.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Button.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Constants.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\TextField.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Utils\Utils.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Utils</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Button.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\EditableValue.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Indicator.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\LiveValue.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\MultipleChoice.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\SelectFile.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Slider.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Spacer.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Title.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui\Widgets\Toggle.h">
+			<Filter>addons\ofxCvGui\src\ofxCvGui\Widgets</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxCvGui\src\ofxCvGui.h">
+			<Filter>addons\ofxCvGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxGrabCam\src\ofxGrabCam.h">
+			<Filter>addons\ofxGrabCam\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLiquidEvent\src\ofxLiquidEvent.h">
+			<Filter>addons\ofxLiquidEvent\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\BaseStore.h">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Register.h">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\Singleton.h">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton\UnmanagedSingleton.h">
+			<Filter>addons\ofxSingleton\src\ofxSingleton</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxSingleton\src\ofxSingleton.h">
+			<Filter>addons\ofxSingleton\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputField.h">
+			<Filter>addons\ofxTextInputField\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxTextInputField\src\ofxTextInputFieldFontRenderer.h">
+			<Filter>addons\ofxTextInputField\src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>
